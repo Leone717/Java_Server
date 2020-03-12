@@ -38,7 +38,7 @@ Run commands in CMD(java, javac)
 cd C:\Program Files\Java\apache-tomcat-10.0.0-M1\conf
 server.xml
 ```
-Setting the port:
+- Setting the port:
 
 ```xml
   <!--  Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
@@ -59,7 +59,7 @@ listing:* libraries web.xml
 
 #### web.xml
 
-Listing is need to be false:
+- Listing is need to be false:
 ```xml
 <servlet>
        <servlet-name>default</servlet-name>
@@ -80,7 +80,7 @@ Listing is need to be false:
 ```xml
  -->
    <role rolename="manager-gui"/>
-   <user username="manager" password="root" roles="manager-gui/>
+   <user username="manager" password="root" roles="manager-gui"/>
  </tomcat-users>
 ```
 
@@ -90,21 +90,21 @@ Listing is need to be false:
 cd C:\Program Files\Java\apache-tomcat-10.0.0-M1\bin
 startup.bat
 ```
-Enable firewall, it works.
+- Enable firewall, it works.
 
-Use Chrome: http://localhost:8080/
+- Use Chrome: http://localhost:8080/
 
 If there is Http Status code 500 you have to allow:
 ```
 apache-tomcat-10.0.0-M1--> Properties--> Security --> Change permissions in Users(DESKTOP-Xyz)
 ```
-Refresh the Server
+- Refresh the Server
 
-Try Tomcat in browser --> Manager App button (Authentication Required) -->admin, password
+- Try Tomcat in browser --> Manager App button (Authentication Required) -->admin, password
 
 ##### We need to modify the tomcat-users.xml:
 
--->
+
 ```xml
   <role rolename="manager-gui"/>
   <role rolename="manager-script"/>
